@@ -1,0 +1,47 @@
+1. Create a new ReactJS component called Greeting that takes a name prop and displays a
+personalized greeting message.
+
+
+import React from 'react';
+
+const Greeting = ({ name }) => {
+  return (
+    <div>
+      <h1>Hello, {name}!</h1>
+      <p>Welcome to our website.</p>
+    </div>
+  );
+};
+
+export default Greeting;
+
+
+2. In the App component, render the Greeting component with different name props, such
+as "John", "Mary", "Alex", and "Sarah".
+
+import React from 'react';
+
+const Greeting = ({ name }) => {
+  return (
+    <div>
+      <h1>Hello, {name}!</h1>
+      <p>Welcome to our website.</p>
+    </div>
+  );
+};
+
+const App = () => {
+  return (
+    <div>
+      <Greeting name="John" />
+      <Greeting name="Mary" />
+      <Greeting name="Alex" />
+      <Greeting name="Sarah" />
+    </div>
+  );
+};
+
+export default App;
+
+3. Observe how the Greeting component updates the message based on the name prop
+passed to it.
