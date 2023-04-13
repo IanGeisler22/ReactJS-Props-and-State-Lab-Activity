@@ -1,0 +1,125 @@
+1. Create a new ReactJS component called Counter that has a count state initialized to 0
+and displays a button to increment the count.
+
+import React, { useState } from 'react';
+
+const Counter = () => {
+  const [count, setCount] = useState(0);
+
+  const incrementCount = () => {
+    setCount(count + 1);
+  };
+
+  return (
+    <div>
+      <h1>Count: {count}</h1>
+      <button onClick={incrementCount}>Increment</button>
+    </div>
+  );
+};
+
+export default Counter;
+
+
+2. Implement a click event handler for the button that updates the count state by 1.
+
+import React, { useState } from 'react';
+
+const Counter = () => {
+  const [count, setCount] = useState(0);
+
+  const incrementCount = () => {
+    setCount(count + 1);
+  };
+
+  return (
+    <div>
+      <h1>Count: {count}</h1>
+      <button onClick={incrementCount}>Increment</button>
+    </div>
+  );
+};
+
+export default Counter;
+
+
+3. In the App component, render the Counter component and observe how the count state
+changes when the button is clicked.
+
+import React, { useState } from 'react';
+
+const Counter = () => {
+  const [count, setCount] = useState(0);
+
+  const incrementCount = () => {
+    setCount(count + 1);
+  };
+
+  return (
+    <div>
+      <h1>Count: {count}</h1>
+      <button onClick={incrementCount}>Increment</button>
+    </div>
+  );
+};
+
+export default Counter;
+
+
+4. Implement a button to decrement the count state by 1.
+
+import React, { useState } from 'react';
+
+const Counter = () => {
+  const [count, setCount] = useState(0);
+
+  const incrementCount = () => {
+    setCount(count + 1);
+  };
+
+  const decrementCount = () => {
+    setCount(count - 1);
+  };
+
+  return (
+    <div>
+      <h1>Count: {count}</h1>
+      <button onClick={incrementCount}>Increment</button>
+      <button onClick={decrementCount}>Decrement</button>
+    </div>
+  );
+};
+
+export default Counter;
+
+
+5. Implement a button to reset the count state to 0.
+import React, { useState } from 'react';
+
+const Counter = () => {
+  const [count, setCount] = useState(0);
+
+  const incrementCount = () => {
+    setCount(count + 1);
+  };
+
+  const decrementCount = () => {
+    setCount(count - 1);
+  };
+
+  const resetCount = () => {
+    setCount(0);
+  };
+
+  return (
+    <div>
+      <h1>Count: {count}</h1>
+      <button onClick={incrementCount}>Increment</button>
+      <button onClick={decrementCount}>Decrement</button>
+      <button onClick={resetCount}>Reset</button>
+    </div>
+  );
+};
+
+export default Counter;
+
