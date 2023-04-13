@@ -1,0 +1,35 @@
+1. Create a new ReactJS component called Person that takes a name prop and a age prop,
+and displays the person's name and age.
+2. In the App component, render the Person component with different name and age props.
+3. Create a new ReactJS component called PersonList that maintains a list of Person
+components and displays them in a table.
+4. Implement a button to add a new Person component to the PersonList component.
+5. Implement a button to remove a Person component from the PersonList component
+
+import React from "react";
+import Person from "./Person"; // assuming you have a "Person" component defined in a separate file
+
+const PersonList = ({ persons }) => {
+  return (
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+          <th>City</th>
+        </tr>
+      </thead>
+      <tbody>
+        {persons.map((person) => (
+          <tr key={person.id}>
+            <td>{person.name}</td>
+            <td>{person.age}</td>
+            <td>{person.city}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  );
+};
+
+export default PersonList;
